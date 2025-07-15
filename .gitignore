@@ -1,0 +1,30 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+
+## Rider
+.idea/
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## HTML map cache / logs (gerekirse)
+Map.html.log
+*.log
+
+## JSON verisi (eğer kullanıcıya özelse)
+veri.json
