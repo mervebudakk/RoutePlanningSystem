@@ -1,0 +1,380 @@
+{
+  "city": "Kocaeli",
+  "taxi": {
+    "openingFee": 28.0,
+    "costPerKm": 22.0
+  },
+  "duraklar": [
+    {
+      "id": "bus_otogar",
+      "name": "Otogar (Otobüs)",
+      "type": "bus",
+      "lat": 40.77583,
+      "lon": 29.97512,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "bus_yahyakaptan",
+          "mesafe": 2.8,
+          "sure": 7,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": {
+        "transferStopId": "tram_otogar",
+        "transferSure": 3,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "bus_yahyakaptan",
+      "name": "Yahya Kaptan (Otobüs)",
+      "type": "bus",
+      "lat": 40.77694,
+      "lon": 29.96577,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "bus_umuttepe",
+          "mesafe": 9.5,
+          "sure": 20,
+          "ucret": 8.0
+        },
+        {
+          "stopId": "bus_halkevi",
+          "mesafe": 4.0,
+          "sure": 12,
+          "ucret": 5.0
+        },
+        {
+          "stopId": "bus_otogar",
+          "mesafe": 2.8,
+          "sure": 8,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": {
+        "transferStopId": "tram_yahyakaptan",
+        "transferSure": 2,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "bus_umuttepe",
+      "name": "Umuttepe (Otobüs)",
+      "type": "bus",
+      "lat": 40.8245,
+      "lon": 29.9224,
+      "sonDurak": true,
+      "nextStops": [
+        {
+          "stopId": "bus_yahyakaptan",
+          "mesafe": 9.5,
+          "sure": 22,
+          "ucret": 8.0
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "bus_halkevi",
+      "name": "Halkevi (Otobüs)",
+      "type": "bus",
+      "lat": 40.7638,
+      "lon": 29.9192,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "bus_sekapark",
+          "mesafe": 1.5,
+          "sure": 5,
+          "ucret": 5.0
+        },
+        {
+          "stopId": "bus_yahyakaptan",
+          "mesafe": 4.0,
+          "sure": 12,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": {
+        "transferStopId": "tram_milli_irade",
+        "transferSure": 4,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "bus_sekapark",
+      "name": "Sekapark (Otobüs)",
+      "type": "bus",
+      "lat": 40.759781,
+      "lon": 29.905258,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "bus_41burda",
+          "mesafe": 2.1,
+          "sure": 6,
+          "ucret": 5.0
+        },
+        {
+          "stopId": "bus_halkevi",
+          "mesafe": 1.5,
+          "sure": 5,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": {
+        "transferStopId": "tram_seka_devlet_hastanesi",
+        "transferSure": 5,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "bus_41burda",
+      "name": "41 Burda AVM (Otobüs)",
+      "type": "bus",
+      "lat": 40.76181,
+      "lon": 29.92892,
+      "sonDurak": true,
+      "nextStops": [
+        {
+          "stopId": "bus_sekapark",
+          "mesafe": 2.1,
+          "sure": 7,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "bus_symbolavm",
+      "name": "Symbol AVM (Otobüs)",
+      "type": "bus",
+      "lat": 40.79648,
+      "lon": 29.95776,
+      "sonDurak": true,
+      "nextStops": [
+        {
+          "stopId": "bus_yahyakaptan",
+          "mesafe": 1.8,
+          "sure": 6,
+          "ucret": 5.0
+        }
+      ],
+      "transfer": null
+    },
+
+    {
+      "id": "tram_plajyolu",
+      "name": "Plajyolu (Tramvay)",
+      "type": "tram",
+      "lat": 40.7569,
+      "lon": 29.8732,
+      "sonDurak": true,
+      "nextStops": [
+        {
+          "stopId": "tram_seka_devlet_hastanesi",
+          "mesafe": 1.1,
+          "sure": 3,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "tram_seka_devlet_hastanesi",
+      "name": "Seka Devlet Hastanesi (Tramvay)",
+      "type": "tram",
+      "lat": 40.7602,
+      "lon": 29.8863,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_kongre_merkezi",
+          "mesafe": 0.8,
+          "sure": 2,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_plajyolu",
+          "mesafe": 1.1,
+          "sure": 3,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": {
+        "transferStopId": "bus_sekapark",
+        "transferSure": 5,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "tram_kongre_merkezi",
+      "name": "Kongre Merkezi (Tramvay)",
+      "type": "tram",
+      "lat": 40.7621,
+      "lon": 29.8969,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_fuar",
+          "mesafe": 1.0,
+          "sure": 3,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_seka_devlet_hastanesi",
+          "mesafe": 0.8,
+          "sure": 2,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "tram_fuar",
+      "name": "Fuar (Tramvay)",
+      "type": "tram",
+      "lat": 40.7628,
+      "lon": 29.9099,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_yenicuma",
+          "mesafe": 0.9,
+          "sure": 2,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_kongre_merkezi",
+          "mesafe": 1.0,
+          "sure": 3,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "tram_yenicuma",
+      "name": "Yeni Cuma (Tramvay)",
+      "type": "tram",
+      "lat": 40.7634,
+      "lon": 29.9198,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_milli_irade",
+          "mesafe": 0.5,
+          "sure": 1,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_fuar",
+          "mesafe": 0.9,
+          "sure": 2,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "tram_milli_irade",
+      "name": "Milli İrade Meydanı (Tramvay)",
+      "type": "tram",
+      "lat": 40.7641,
+      "lon": 29.9253,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_adliye",
+          "mesafe": 1.5,
+          "sure": 4,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_yenicuma",
+          "mesafe": 0.5,
+          "sure": 1,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": {
+        "transferStopId": "bus_halkevi",
+        "transferSure": 4,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "tram_adliye",
+      "name": "Adliye (Tramvay)",
+      "type": "tram",
+      "lat": 40.7712,
+      "lon": 29.9401,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_yahyakaptan",
+          "mesafe": 2.1,
+          "sure": 5,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_milli_irade",
+          "mesafe": 1.5,
+          "sure": 4,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": null
+    },
+    {
+      "id": "tram_yahyakaptan",
+      "name": "Yahya Kaptan (Tramvay)",
+      "type": "tram",
+      "lat": 40.7796,
+      "lon": 29.9647,
+      "sonDurak": false,
+      "nextStops": [
+        {
+          "stopId": "tram_otogar",
+          "mesafe": 1.2,
+          "sure": 3,
+          "ucret": 4.5
+        },
+        {
+          "stopId": "tram_adliye",
+          "mesafe": 2.1,
+          "sure": 5,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": {
+        "transferStopId": "bus_yahyakaptan",
+        "transferSure": 2,
+        "transferUcret": 0.0
+      }
+    },
+    {
+      "id": "tram_otogar",
+      "name": "Otogar (Tramvay)",
+      "type": "tram",
+      "lat": 40.7753,
+      "lon": 29.9744,
+      "sonDurak": true,
+      "nextStops": [
+        {
+          "stopId": "tram_yahyakaptan",
+          "mesafe": 1.2,
+          "sure": 3,
+          "ucret": 4.5
+        }
+      ],
+      "transfer": {
+        "transferStopId": "bus_otogar",
+        "transferSure": 3,
+        "transferUcret": 0.0
+      }
+    }
+  ]
+}
